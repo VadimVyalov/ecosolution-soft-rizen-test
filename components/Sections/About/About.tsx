@@ -57,13 +57,11 @@ const ValuesSmallCard = ({ id, title, description }: SmallCard) => {
         <div key={id} className="bg-secondaryBg p-3 d:px-6  d:py-12  ">
             <h3 className=" font-oswald text-016xl t:text-018xl d:text-032xl  uppercase 
             flex items-center gap-x-2 pb-[33px] t:pb-[51px] d:pb-[94px] border-b border-accent">
-
                 <Icon name='/assets/icons/small.svg' id={id}
                     className={cn('d:w-6 d:h-6 ')}
                 />
                 {title}
             </h3>
-
             <p className="text-14xl d:text-16xl pt-3 d:pt-6">
                 {description}
             </p>
@@ -93,21 +91,16 @@ const ValuesCard = ({ id, smallCard, image }: ValueCard) => {
     )
 }
 
-
 const About = () => {
 
     return (
         <Section id="about" className="  ">
-
-
             <div className="grid grid-cols-1 t:grid-cols-2 pb-9 t:pb-[100px] d:pb-[120px]">
-                <h2 className=" font-oswald text-028xl t:text-036xl d:text-048xl uppercase text-left p-0 t:pr-[100px] d:pr-[260px] pb-6"> Main values of our company </h2>
-
+                <h2 className=" sectionTitle text-left p-0 t:pr-[100px] d:pr-[260px] pb-6"> Main values of our company </h2>
                 <p className="p-0 t:pl-[10px] d:pl-[160px] text-justify h-full border-l border-accent">
                     EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.
                 </p>
             </div>
-
             <ul className="grid gap-6  d:gap-12 " >
                 {card?.map(item => <ValuesCard key={item.id} {...item} />)}
             </ul>

@@ -41,5 +41,5 @@ a {
 
 /*  */
 .sectionTitle {
-  @apply text-center font-oswald text-[40px] font-semibold mb-10;
+  @apply font-oswald text-028xl t:text-036xl d:text-048xl uppercase;
 }

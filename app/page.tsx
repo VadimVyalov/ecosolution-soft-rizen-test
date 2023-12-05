@@ -8,7 +8,7 @@ import Main from "@/components/Sections/Main";
 
 
 
-export default function Home() {
+const Home = () => {
   return (
 
     <main className="">
@@ -22,3 +22,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home

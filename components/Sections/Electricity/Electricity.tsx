@@ -1,16 +1,12 @@
 "use client";
 import Section from "@/components/Section"
 import ToSeparateString from "@/components/ToSeparateString";
-import cn from "@/helpers";
 import useRequestAnimationFrame from "@/hooks/useRequestAnimationFrame";
 import { useState } from "react";
 
 
 const startCount = 1134147814
 const Electricity = () => {
-
-
-
 
     const [count, setCount] = useState(startCount);
 
@@ -22,7 +18,7 @@ const Electricity = () => {
     return (
         <Section id="electricity" className="">
 
-            <h2 className=" font-oswald text-028xl t:text-036xl d:text-048xl uppercase text-center flex flex-col">
+            <h2 className=" sectionTitle text-center flex flex-col">
                 <span className=" whitespace-nowrap">Electricity we produced</span> <span className=" whitespace-nowrap">for all time</span> </h2>
             <div className="grid grid-cols-2 py-6 d:py-4">
                 <div className="h-12 t:h-[87px] border-r border-accent"></div>

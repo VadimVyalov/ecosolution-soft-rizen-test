@@ -38,10 +38,16 @@ const BurgerMenu = () => {
 				<div className={cn("container py-9 d:py-6 h-full overflow-x-hidden")} >
 
 					<div className={cn(open ? "translate-x-0" : "translate-x-[150%]", " transition-all duration-500", " h-full w-[320px] d:w-[365px] ml-auto mr-0 p-6",
-						"bg-primary text-white-25 rounded-[25px]  flex flex-col ")}
+						"bg-primary text-white-100 rounded-[25px]  flex flex-col ")}
 						onClick={(e) => { e.stopPropagation() }} >
 
-						<button onClick={onCloseMenu}> close </button>
+						<button className="text-left hover:text-accent transition-color duration-300 flex items-center pb-1.5" onClick={onCloseMenu}>
+
+
+							<Icon name='/assets/icons/small.svg' id='close' className="w-5 h-5 pt-[2px] " />
+
+
+							close </button>
 
 						<Navigation
 							menuItems={menuHeader}

@@ -20,8 +20,9 @@
         <path d="M15.73 7.11914V20.4991" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     
-    <symbol id="check" fill="currentColor" viewBox="0 0 20 16">
-        <path d="M17.2889 0.946922C17.7947 0.434359 18.6148 0.434359 19.1206 0.946922C19.6203 1.4532 19.6264 2.27018 19.139 2.78408L8.79043 15.017C8.78048 15.0296 8.76985 15.0417 8.75858 15.0531C8.25275 15.5656 7.43264 15.5656 6.92682 15.0531L0.629372 8.6718C0.123543 8.15923 0.123543 7.3282 0.629372 6.81564C1.1352 6.30308 1.95531 6.30308 2.46114 6.81564L7.80367 12.2293L17.2545 0.986183C17.2652 0.972411 17.2766 0.959301 17.2889 0.946922Z"/>
+    <symbol id="close" stroke="currentColor" viewBox="0 0 20 20">
+ <path d="M5.8335 5.83331L14.1668 14.1666M5.8335 14.1666L14.1668 5.83331" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
     </symbol>
 
     <symbol id="menu" fill="currentColor" viewBox="0 0 16 16">
@@ -30,9 +31,8 @@
         <path d="M2 11.833H14" stroke="#292D32" stroke-linecap="round"/>
     </symbol>
 
-    <symbol id='plus' stroke="currentColor" viewBox="0 0 10 10" >
-        <path d="M5 1.09961V8.59961"  stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1.25 4.84961H8.75"  stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+    <symbol id='minus' stroke="currentColor" viewBox="0 0 16 16" >
+       <path d="M4 8H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
 

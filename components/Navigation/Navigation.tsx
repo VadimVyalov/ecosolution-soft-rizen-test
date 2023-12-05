@@ -69,7 +69,7 @@ const Navigation = ({ mobile = false, itemCn = "", linkCn = "", wrapCn = '', men
         {
           menuItems?.map(i => {
             return (
-              <li key={i.id} className={cn("hover:text-accent transition  text-24xl", i.link === `/#${activeSection}` ? 'text-white-100' : 'text-white-25', linkCn)}>
+              <li key={i.id} className={cn("hover:text-white-100 transition  text-24xl", i.link === `/#${activeSection}` ? 'text-accent' : 'text-white-25', linkCn)}>
                 <Link className={cn(" whitespace-nowrap  ", "flex gap-x-2 items-center", itemCn)}
                   title={i.title}
                   href={i.link}
