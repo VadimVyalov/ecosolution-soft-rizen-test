@@ -43,3 +43,6 @@ a {
 .sectionTitle {
   @apply font-oswald text-028xl t:text-036xl d:text-048xl uppercase;
 }
+.hoverLight {
+  @apply hover:text-accent transition-colors duration-200;
+}

@@ -4,7 +4,6 @@ import Image from "next/image"
 import cn from "@/helpers";
 import Icon from "@/components/Icon";
 
-
 const card = [
     {
         id: 'vc-01',
@@ -97,7 +96,7 @@ const About = () => {
         <Section id="about" className="  ">
             <div className="grid grid-cols-1 t:grid-cols-2 pb-9 t:pb-[100px] d:pb-[120px]">
                 <h2 className=" sectionTitle text-left p-0 t:pr-[100px] d:pr-[260px] pb-6"> Main values of our company </h2>
-                <p className="p-0 t:pl-[10px] d:pl-[160px] text-justify h-full border-l border-accent">
+                <p className="p-0 t:pl-[10px] d:pl-[161px] text-justify h-full border-l border-accent">
                     EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world`s energy needs.
                 </p>
             </div>

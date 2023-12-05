@@ -30,8 +30,8 @@ const Header = () => {
       <div className="container border border-red-600  ">
 
         <div className="flex justify-between items-center ">
-          <Link href="/" title="ecosolution" className=" shrink-0 ">
-            <Icon name='/assets/icons/Logo.svg' id='logo' className='w-[269px] h-[40px] hover:text-accent  ' />
+          <Link href="/" title="ecosolution" className=" hoverLight ">
+            <Icon name='/assets/icons/Logo.svg' id='logo' className='w-[269px] h-[40px]  ' />
           </Link>
 
           <div className="flex gap-x-3  ">

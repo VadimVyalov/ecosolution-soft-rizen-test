@@ -12,7 +12,7 @@ interface ButtomLink {
 const ButtomLink = ({ href, title, className = "", children }: ButtomLink) => {
     return (
         <Link href={href} title={title}
-            className={cn("rounded-full  flex items-center transition-all duration-300", className)}
+            className={cn("rounded-full  flex items-center transition-colors duration-200", className)}
         >
             {children}
         </Link>

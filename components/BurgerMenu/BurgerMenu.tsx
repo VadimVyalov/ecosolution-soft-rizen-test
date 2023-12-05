@@ -28,11 +28,9 @@ const BurgerMenu = () => {
 	return (
 		<>
 
-			<button title="menu" onClick={onOpenMenu} className={cn('flex justify-center items-center rounded-full bg-some hover:bg-accent w-10 h-[39px] ')}>
-				<Icon name='/assets/icons/small.svg' id='menu' className={cn(' transition-all duration-200')} />
+			<button title="menu" onClick={onOpenMenu} className={cn('flex justify-center items-center rounded-full bg-some hover:bg-accent w-10 h-[39px] hoverLight')}>
+				<Icon name='/assets/icons/small.svg' id='menu' />
 			</button>
-
-
 
 			<div className={cn("transition-all duration-500 top-0 bottom-0 right-0 fixed z-20", open ? "w-full" : "w-0")} onClick={onCloseMenu}>
 				<div className={cn("container py-9 d:py-6 h-full overflow-x-hidden")} >
@@ -41,13 +39,10 @@ const BurgerMenu = () => {
 						"bg-primary text-white-100 rounded-[25px]  flex flex-col ")}
 						onClick={(e) => { e.stopPropagation() }} >
 
-						<button className="text-left hover:text-accent transition-color duration-300 flex items-center pb-1.5" onClick={onCloseMenu}>
-
-
+						<button className="text-left  flex items-center pb-1.5 hoverLight" onClick={onCloseMenu}>
 							<Icon name='/assets/icons/small.svg' id='close' className="w-5 h-5 pt-[2px] " />
-
-
-							close </button>
+							close
+						</button>
 
 						<Navigation
 							menuItems={menuHeader}
