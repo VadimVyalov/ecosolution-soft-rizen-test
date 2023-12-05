@@ -9,6 +9,7 @@ html,
 body {
   @apply font-firaSans text-primary text-16xl  scroll-smooth bg-primaryBg scroll-pt-[112px] d:scroll-pt-[88px];
 }
+
 img {
   @apply font-firaSans font-normal text-14xl;
 }

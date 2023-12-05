@@ -9,7 +9,7 @@ const Social = ({ className = '' }) => {
                     className={cn('w-6 h-6 shrink-0')}
                 />
             </Link>
-            <Link href="#instagramm" title="Instagram" className="flex shrink-0 bg-transparent hover:text-accent">
+            <Link href="#instagram" title="Instagram" className="flex shrink-0 bg-transparent hover:text-accent">
                 <Icon name='/assets/icons/social.svg' id='instagram'
                     className={cn('w-6 h-6 shrink-0')}
                 />

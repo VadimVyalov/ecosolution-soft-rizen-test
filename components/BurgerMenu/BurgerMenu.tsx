@@ -33,14 +33,14 @@ const BurgerMenu = () => {
 			</button>
 
 
-			<div className={cn(" fixed   top-0  bottom-0 right-0 left-0 ", open ? "z-20" : "z-[-1]")} onClick={onCloseMenu}>
-				<div className="container py-9 d:py-6 overflow-hidden  h-full"
-				>
 
-					<div className={cn(open ? "translate-x-0" : "translate-x-[150%]", "transition-all duration-500 h-full w-[320px] d:w-[365px]  ml-auto mr-0 p-6",
+			<div className={cn("transition-all duration-500 top-0 bottom-0 right-0 fixed z-20", open ? "w-full" : "w-0")} onClick={onCloseMenu}>
+				<div className={cn("container py-9 d:py-6 h-full overflow-x-hidden")} >
+
+					<div className={cn(open ? "translate-x-0" : "translate-x-[150%]", " transition-all duration-500", " h-full w-[320px] d:w-[365px] ml-auto mr-0 p-6",
 						"bg-primary text-white-25 rounded-[25px]  flex flex-col ")}
-						onClick={(e) => { e.stopPropagation() }}
-					>
+						onClick={(e) => { e.stopPropagation() }} >
+
 						<button onClick={onCloseMenu}> close </button>
 
 						<Navigation
@@ -52,6 +52,7 @@ const BurgerMenu = () => {
 						/>
 						<Social />
 					</div>
+
 				</div>
 			</div>
 

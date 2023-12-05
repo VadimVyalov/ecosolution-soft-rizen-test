@@ -2,6 +2,7 @@ import Link from "next/link";
 import cn from "@/helpers";
 import Icon from "../Icon";
 import { useEffect, useRef, useState } from "react";
+
 interface NavigationProps {
   wrapCn?: string;
   itemCn?: string;
@@ -24,6 +25,8 @@ const Navigation = ({ mobile = false, itemCn = "", linkCn = "", wrapCn = '', men
 
     const pad = sectionPad?.offsetHeight ? sectionPad.offsetHeight : 100
 
+    if (!open) return
+
     sections.forEach((section) => {
       const top = window.scrollY
       const height = window.innerHeight - pad
@@ -43,7 +46,7 @@ const Navigation = ({ mobile = false, itemCn = "", linkCn = "", wrapCn = '', men
 
       if (sectionTop >= height || sectionBottom <= 0) { visible = 0 }
 
-      // console.log(id, '==', sectionTop, '--', sectionBottom, '--', visible)
+
 
       if (visible > active) {
         active = visible
@@ -51,11 +54,13 @@ const Navigation = ({ mobile = false, itemCn = "", linkCn = "", wrapCn = '', men
       }
 
     });
+
     setActiveSection(id)
+
   }, [open]);
 
 
-  console.log(activeSection);
+  //console.log(activeSection);
 
   return (
     <nav className={cn(mobile ? "w-full" : "w-fit", " h-full")} >

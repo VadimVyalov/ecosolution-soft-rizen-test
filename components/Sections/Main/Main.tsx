@@ -5,7 +5,7 @@ const Main = () => {
 
     return (
         <Section id="main" className="h-[400px] border border-red-600">
-            <h2 className="text-028xl text-center uppercase"> Main </h2>
+            <h2 className=" font-oswald font-bold text-048xl d:text-0100xl text-center uppercase text-accent"> Main </h2>
         </Section>
     )
 }

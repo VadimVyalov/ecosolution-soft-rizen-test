@@ -50,6 +50,14 @@ fontSize: {
         lineHeight: '22px',
         letterSpacing: '-0.72px',
         fontWeight: '400',
+  }],
+           '016xl': ['16px', {
+        lineHeight: '24px',
+        fontWeight: '400',
+        }],
+      '018xl': ['18px', {
+        lineHeight: '24px',
+        fontWeight: '400',
         }],
       '20xl': ['20px', {
         lineHeight: '24px',
@@ -60,7 +68,12 @@ fontSize: {
         lineHeight: '27px',
         letterSpacing: '-0.96px',
         fontWeight: '400',
+      }],
+      '024xl': ['24px', {
+        lineHeight: '24px',
+        fontWeight: '400',
         }],
+      
         '28xl': ['28px', {
         lineHeight: '34px',
         letterSpacing: '-1.12px',

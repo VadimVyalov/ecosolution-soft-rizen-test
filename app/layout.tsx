@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import type { Metadata } from 'next'
 import { Oswald, Fira_Sans } from "next/font/google";
@@ -34,8 +35,8 @@ export default function RootLayout({
         <Header />
         {children}
 
-        {/* <Footer /> */}
-        <div id="modal-root"></div>
+        <Footer />
+        {/* <div id="modal-root"></div> */}
       </body>
     </html>
   )

@@ -11,9 +11,9 @@ const Section = ({ children, className = "", id }: SectionProps) => {
     return (
         <section
             id={id}
-            className={cn("", className)}
+            className={cn(" py-9 t:py-[50px] d:py-[60px]", className)}
         >
-            <Container>{children}</Container>
+            <Container className="container">{children}</Container>
         </section>
     );
 }
