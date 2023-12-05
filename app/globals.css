@@ -36,7 +36,7 @@ a {
 
 /* advantage section styles */
 .container {
-  @apply mx-auto my-0 px-2 m:px-5 t:px-[30px] d:px-[100px] min-w-[360px] max-w-[480px] t:max-w-[768px] d:max-w-[1440px];
+  @apply mx-auto my-0 px-5  t:px-[30px] d:px-[100px] min-w-[360px] max-w-[480px] t:max-w-[768px] d:max-w-[1440px];
 }
 
 /*  */

@@ -95,9 +95,9 @@ const Faq = () => {
                     }
                 </ul>
 
-                <div className="t:col-start-2 t:row-start-2 flex flex-col justify-end items-center t:w-fit gap-y-3 d:pl-[137px]">
+                <div className=" t:pb-4 d:pb-6 t:col-start-2 t:row-start-2 flex flex-col justify-end items-center t:w-fit gap-y-3 d:pl-[137px]">
 
-                    <p className="inline ml-0 mr-au text-center t:text-left text-18xl d:text-24xl">Didn`t find the answer to your question?</p>
+                    <p className="inline mt-5 ml-0 mr-au text-center t:text-left text-18xl d:text-24xl">Didn`t find the answer to your question?</p>
                     <ButtomLink href='/#contacts' title="Get in touch" className=" w-fit t:flex group hover:text-accent hover:bg-primary   bg-accent px-[17px] py-[10px]  gap-x-3">
                         Contact Us
                         <span className="flex items-center justify-center w-[14px] h-[14px] p-[1px] border border-primary rounded-full

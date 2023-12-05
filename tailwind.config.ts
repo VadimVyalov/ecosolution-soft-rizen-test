@@ -28,7 +28,8 @@ const config: Config = {
         white: {
           '25': "#FFFFFF40",
           '100':"#FFFFFF"
-        }
+        },
+        placeholder:"#BDBDBD",
       },
 fontSize: {
       '12xl': ['12px', {
