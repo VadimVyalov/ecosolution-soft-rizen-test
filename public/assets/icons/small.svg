@@ -2,9 +2,9 @@
     <symbol id="arrow" stroke="currentColor" fill="none" viewBox="0 0 8 9">
         <path d="M6.27588 5.31006L3.99963 7.33339L1.72338 5.31006"  stroke-width="0.833607" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M3.99951 1.66675L3.99951 7.27675"  stroke-width="0.833607" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <symbol id="arrow-right" stroke="currentColor" fill="transparent" viewBox="0 0 16 16">
-        <path d="M8.40434 1.6543L14.75 7.99995L8.40434 14.3456"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M14.7499 8L1.25 8"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <symbol id="arrow-big" stroke="currentColor" fill="transparent" viewBox="0 0 36 36">
+        <path d="M14.3545 8.89343L5.24949 17.9984L14.3545 27.1034" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M30.749 17.9988H5.50402"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     
     <symbol id="phone" stroke="currentColor" fill="none" viewBox="0 0 24 25">

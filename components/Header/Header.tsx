@@ -37,7 +37,7 @@ const Header = () => {
           <div className="flex t:gap-x-3  ">
             <BurgerMenu />
 
-            <ButtomLink href='/' title="Get in touch" className=" hidden t:flex group hover:text-accent hover:bg-primary   bg-accent px-[17px] py-[10px]  gap-x-3">
+            <ButtomLink href='/#contacts' title="Get in touch" className=" hidden t:flex group hover:text-accent hover:bg-primary   bg-accent px-[17px] py-[10px]  gap-x-3">
               Get in touch
               <span className="flex items-center justify-center w-[14px] h-[14px] p-[1px] border border-primary rounded-full
                text-primary bg-primary group-hover:bg-accent group-hover:border-accent">

@@ -102,24 +102,24 @@ const Contacts = () => {
                         </div>
 
                         <div className="flex flex-col gap-y-2 d:gap-y-3 w-full ">
-                            <label className={cn("  border-b border-accent transition-colors ", errors.name ? "border-error" : "border-accent")}>* E-mail:
+                            <label className={cn("  border-b border-accent transition-colors ", errors.email ? "border-error" : "border-accent")}>* E-mail:
                                 <input {...register("email")} placeholder="johnrosie@gmail.com"
                                     className="outline-none bg-transparent text-18xl d:text-20xl text-primary placeholder:text-placeholder pt-3  w-full  " />
                             </label>
 
-                            {errors.email ? <p className=" text-error text-xs">{errors.email.message}</p> : <p className="text-xs text-transparent">ok</p>}
+                            {errors.email ? <p className=" text-error text-12xl text-right">{errors.email.message}</p> : <p className="text-12xl text-transparent">ok</p>}
                         </div>
 
                         <div className="flex flex-col gap-y-2 d:gap-y-3 w-full ">
-                            <label className={cn("  border-b border-accent transition-colors ", errors.name ? "border-error" : "border-accent")}>* Phone:
+                            <label className={cn("  border-b border-accent transition-colors ", errors.phone ? "border-error" : "border-accent")}>* Phone:
                                 <input {...register("phone")} placeholder="380961234567"
                                     className="outline-none bg-transparent text-18xl d:text-20xl text-primary placeholder:text-placeholder pt-3  w-full  " />
                             </label>
-                            {errors.phone ? <p className=" text-error text-xs">{errors.phone.message}</p> : <p className="text-xs text-transparent">ok</p>}
+                            {errors.phone ? <p className=" text-error text-12xl text-right">{errors.phone.message}</p> : <p className="text-12xl text-transparent">ok</p>}
                         </div>
 
                         <div className="flex flex-col gap-y-2 d:gap-y-3 w-full ">
-                            <label className={cn("  border-b border-accent transition-colors ", errors.name ? "border-error" : "border-accent")}>Message
+                            <label className={cn("  border-b border-accent transition-colors ")}>Message
                                 <textarea {...register("mesage")} placeholder="My message...." rows={5}
                                     className="outline-none bg-transparent text-18xl d:text-20xl text-primary placeholder:text-placeholder pt-3  w-full resize-none " />
                             </label>

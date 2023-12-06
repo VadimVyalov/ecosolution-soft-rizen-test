@@ -33,7 +33,7 @@ const Main = () => {
 
                 <Link href='mailto:office@ecosolution.com' title="send e-mail" className="t:col-start-3  d:ml-[50%]  "> office@ecosolution.com </Link>
 
-                <span className=" t:col-start-4 flex t:mr-0 t:ml-auto"> ecosolution © 2023</span>
+                <span className="hidden t:flex t:col-start-4  t:mr-0 t:ml-auto"> ecosolution © 2023</span>
             </div>
 
             <Image className=" "
