@@ -6,7 +6,7 @@ import Icon from "@/components/Icon";
 import React, { useEffect, useRef, useState } from 'react';
 
 import { Swiper, SwiperSlide, SwiperRef, SwiperProps } from 'swiper/react';
-
+import type { Swiper as SwiperType } from 'swiper';
 import { register } from 'swiper/element/bundle';
 // Import Swiper styles
 import 'swiper/css';
@@ -110,19 +110,19 @@ const CasesCard = ({ id, title, category, date, image }: CasesCard) => {
 const Cases = () => {
 
     const swiperRef = useRef<SwiperProps>(null);
-    const [swiper, setSwiper] = useState<SwiperProps>(null);
+    const [swiper, setSwiper] = useState<SwiperType | null>(null);
     const [activeSlide, setActiveSlide] = useState(0)
 
     const nextSlide = () => {
-        swiper.slideNext();
+        swiper?.slideNext();
     };
 
     const prevSlide = () => {
-        swiper.slidePrev();
+        swiper?.slidePrev();
     };
 
     const getActiveSlide = () => {
-        if (swiper?.realIndex + 1 !== activeSlide) {
+        if (swiper && swiper?.realIndex + 1 !== activeSlide) {
             setActiveSlide(swiper?.realIndex + 1)
             //  console.log(swiper?.slides?.length)
         }
@@ -135,7 +135,7 @@ const Cases = () => {
                 <div className="flex items-center t:border-l t:border-accent">
 
                     <p className="self-end text-28xl font-light ml-0 t:ml-2 d:ml-[161px]   ">
-                        {activeSlide} <span className=" opacity-25">/{swiper?.slides?.length | 0}</span>
+                        {activeSlide} <span className=" opacity-25">/{swiper && swiper?.slides?.length | 0}</span>
                     </p>
 
                     <button title="prev" onClick={prevSlide}
@@ -155,9 +155,9 @@ const Cases = () => {
             </div>
 
             <Swiper
-                ref={swiperRef}
+                // ref={swiperRef}
                 modules={[Pagination, Navigation]}
-                onSwiper={(s: React.SetStateAction<null>) => { setSwiper(s) }}
+                onSwiper={(s: React.SetStateAction<SwiperType | null>) => { setSwiper(s) }}
                 loop
                 onActiveIndexChange={getActiveSlide}
                 className="mySwiper"
