@@ -6,8 +6,6 @@ import { Oswald, Fira_Sans } from "next/font/google";
 import './globals.css'
 
 
-
-
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: 'swap', variable: '--font-oswald', })
 const firaSans = Fira_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: 'swap', variable: '--font-firaSans', })
 
@@ -15,11 +13,23 @@ export const metadata: Metadata = {
   title: 'Ecosolution',
   description: 'energy',
 
-  robots: {
-    index: false,
-    follow: false,
-    nocache: true
-  }
+  metadataBase: new URL('https://ecosolution-alpha.vercel.app/'),
+  openGraph: {
+    title: 'Renewable energy for any task',
+    description: 'Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass',
+    url: 'https://ecosolution-alpha.vercel.app/',
+    siteName: 'Ecosolution',
+    images: [
+      {
+        url: 'https://ecosolution-alpha.vercel.app/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'RENEWABLE ENERGY',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({

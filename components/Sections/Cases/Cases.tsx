@@ -1,27 +1,18 @@
 "use client";
 import Section from "@/components/Section"
 import Image from "next/image"
-import cn from "@/helpers";
 import Icon from "@/components/Icon";
-import React, { useEffect, useRef, useState } from 'react';
-
-import { Swiper, SwiperSlide, SwiperRef, SwiperProps } from 'swiper/react';
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
-import { register } from 'swiper/element/bundle';
+import ButtomLink from "@/components/ButtomLink";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
-// import 'swiper/swiper.min.css'
-// import 'swiper/modules/pagination/pagination.min.css'
-// import 'swiper/modules/pagination/navigation.min.css'
-// import required modules
 
-import { Pagination, Navigation } from 'swiper/modules';
-import ButtomLink from "@/components/ButtomLink";
-import { SwiperContainer } from 'swiper/element/bundle';
-import { useSwiper } from 'swiper/react';
 
 const cases = [
     {
@@ -70,8 +61,6 @@ type CasesCard = {
     image: string
 }
 
-
-
 const CasesCard = ({ id, title, category, date, image }: CasesCard) => {
     return (
         <div className="bg-secondaryBg pb-3 d:pb-9  flex flex-col justify-between ">
@@ -93,23 +82,16 @@ const CasesCard = ({ id, title, category, date, image }: CasesCard) => {
                     </ButtomLink>
                 </div>
                 <div className="flex items-center justify-between gap-x-3 mx-3 d:mx-12 pt-3 d:pt-6 text-12xl t:text-14xl d:text-16xl ">
-                    <p>
-                        {category}
-                    </p>
-                    <p>
-                        {date}
-                    </p>
+                    <p> {category}  </p>
+                    <p> {date}  </p>
                 </div>
             </div>
         </div>
     )
 }
 
-
-
 const Cases = () => {
 
-    const swiperRef = useRef<SwiperProps>(null);
     const [swiper, setSwiper] = useState<SwiperType | null>(null);
     const [activeSlide, setActiveSlide] = useState(0)
 
